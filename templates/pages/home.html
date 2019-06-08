@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Estudio ABC</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static "images/favicon.png" %}" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link href="{% static "vendors/animate/animate.css" %}" rel="stylesheet">
+    <!-- Icon CSS-->
+	<link rel="stylesheet" href="{% static "vendors/font-awesome/css/font-awesome.min.css" %}">
+    <!-- Camera Slider -->
+    <link rel="stylesheet" href="{% static "vendors/camera-slider/camera.css" %}">
+    <!-- Owlcarousel CSS-->
+	<link rel="stylesheet" type="text/css" href="{% static "vendors/owl_carousel/owl.carousel.css" %}" media="all">
+
+    <!--Theme Styles CSS-->
+	<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}" media="all" />
+
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="{% static "js/html5shiv.min.js" %}"></script>
+    <script src="{% static "js/respond.min.js" %}"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    {% include 'header.html' %}
+
+    <!-- Slider area -->
+    <section class="slider_area row m0">
+        <div class="slider_inner">
+            <div data-thumb="{% static "images/quem-somo-bg-dark.jpg" %}" data-src="{% static "images/quem-somo-bg-dark.jpg" %}">
+                <div class="camera_caption">
+                   <div class="container">
+                        <h5 class=" wow fadeInUp animated">Bem vindo ao</h5>
+                        <h3 class=" wow fadeInUp animated" data-wow-delay="0.5s">estudioabc</h3>
+                        <p class=" wow fadeInUp animated" data-wow-delay="0.8s">Estamos afinados com a evolução do segmento, acompanhamos e  investimos  continuamente  em recursos, para oferecermos os melhores resultados.</p>
+                        <a class=" wow fadeInUp animated" data-wow-delay="1s" href="#">Saiba mais</a>
+                   </div>
+                </div>
+            </div>
+            <div data-thumb="{% static "images/slider-03.jpg" %}" data-src="{% static "images/slider-03.jpg" %}">
+                <div class="camera_caption">
+                   <div class="container">
+                        <h5 class=" wow fadeInUp animated">Equipe Experiente</h5>
+                        <h3 class=" wow fadeInUp animated" data-wow-delay="0.5s">São mais de 15 anos de experiência</h3>
+                        <p class=" wow fadeInUp animated" data-wow-delay="0.8s">O Estudio ABC é uma empresa que compartilha tecnologia de ultima geração com produtores gráficos, diretores de arte, designers, decoradores, arquitetos e artistas; que buscam a perfeição para reproduzir seus impressos e suas imagens.</p>
+                        <a class=" wow fadeInUp animated" data-wow-delay="1s" href="#">Saiba mais</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Slider area -->
+
+    <!-- Professional Builde -->
+    <section class="professional_builder row">
+        <div class="container">
+           <div class="row builder_all">
+                <div class="col-md-3 col-sm-6 builder">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <h4>Pre Press</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                </div>
+                <div class="col-md-3 col-sm-6 builder">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                    <h4>CTP</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                </div>
+                <div class="col-md-3 col-sm-6 builder">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <h4>Provas de Cor</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                </div>
+                <div class="col-md-3 col-sm-6 builder">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    <h4>Fotolito</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                </div>
+           </div>
+        </div>
+    </section>
+    <!-- End Professional Builde -->
+
+    <!-- About Us Area -->
+    <section class="about_us_area row">
+        <div class="container">
+            <div class="tittle wow fadeInUp">
+                <h2>Nossa Empresa</h2>
+                <h4 style="line-height: 20px;">O Estudio ABC é uma empresa que compartilha tecnologia de ultima geração com produtores gráficos, diretores de arte, designers, decoradores, arquitetos e artistas; que buscam a perfeição para reproduzir seus impressos e suas imagens.</h4>
+            </div>
+            <div class="row about_row">
+                <div class="col-md-5 col-sm-6 about_client about_pages_client">
+                    <img src="{% static 'images/quem-somos-equipe.jpg' %}" alt="">
+                </div>
+                <div class="who_we_area col-md-7 col-sm-6">
+                    <div class="subtittle">
+                        <h2>O Estúdio</h2>
+                    </div>
+                    <p style="padding-top: 28px; padding-bottom: 0px;">Estamos afinados com a evolução do segmento, acompanhamos e  investimos  continuamente  em recursos, para oferecermos os melhores resultados.</p>
+                    <p style="padding-top: 15px; padding-bottom: 0px;">Para a indústria gráfica, mantemos um setor completo  com o que existe de mais atual para gravação a laser de chapas e fotolitos; nosso fluxo de produção é 100% digital, proporcionando um processo rápido e seguro.</p>
+                    <p style="padding-top: 15px; padding-bottom: 0px;">São mais de 15 anos participando da rotina da indústria gráfica, buscando sempre o aumento nos ganhos obtidos na produção de impressos, reduzindo custos e abreviando prazos nos processos que antecedem a impressão.</p>
+                    <p style="padding-top: 15px; padding-bottom: 0px;">Para o mercado das artes dispomos de tecnologia e processos digitais de impressão de última geração; com qualidade inigualável para reprodução de fotografias e obras de arte em papeis especiais e nos mais variados suportes.</p>
+                    <p style="padding-top: 15px; padding-bottom: 0px;">O Estudio ABC é a extensão do seu espaço de trabalho, uma ponte que estabelece a união da arte com a tecnologia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us Area -->
+
+    <!-- Our Achievments Area -->
+    <section class="our_achievments_area" data-stellar-background-ratio="0.3">
+        <div class="container">
+            <div class="tittle wow fadeInUp">
+                <h2>Nossos Números</h2>
+                <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
+            </div>
+            <div class="achievments_row row">
+                <div class="col-md-3 col-sm-6 p0 completed">
+                    <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                    <span class="counter">800</span>
+                    <h6>LOREM IPSUM</h6>
+                </div>
+                <div class="col-md-3 col-sm-6 p0 completed">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span class="counter">230</span>
+                    <h6>LOREM IPSUM</h6>
+                </div>
+                <div class="col-md-3 col-sm-6 p0 completed">
+                    <i class="fa fa-child" aria-hidden="true"></i>
+                    <span class="counter">1390</span>
+                    <h6>LOREM IPSUM</h6>
+                </div>
+                <div class="col-md-3 col-sm-6 p0 completed">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                    <span class="counter">125</span>
+                    <h6>LOREM IPSUM</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Achievments Area -->
+
+    <!-- Our Partners Area -->
+    <section class="our_partners_area">
+        <div class="container">
+            <div class="tittle wow fadeInUp">
+                <h2>Nossos Parceiros</h2>
+                <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h4>
+            </div>
+            <div class="partners">
+                <div class="item"><img src="{% static "images/client_logo/client_logo-1.png" %}" alt=""></div>
+                <div class="item"><img src="{% static "images/client_logo/client_logo-2.png" %}" alt=""></div>
+                <div class="item"><img src="{% static "images/client_logo/client_logo-3.png" %}" alt=""></div>
+                <div class="item"><img src="{% static "images/client_logo/client_logo-4.png" %}" alt=""></div>
+                <div class="item"><img src="{% static "images/client_logo/client_logo-5.png" %}" alt=""></div>
+            </div>
+        </div>
+        <div class="book_now_aera">
+            <div class="container">
+                <div class="row book_now">
+                    <div class="col-md-10 booking_text">
+                        <h4>Entre em contato conosco, solicite uma visita.</h4>
+                        <p>O Estudio ABC é a extensão do seu espaço de trabalho, uma ponte que estabelece a união da arte com a tecnologia.</p>
+                    </div>
+                    <div class="col-md-2 p0 book_bottun">
+                        <a href="#" class="button_all">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Partners Area -->
+
+    {% include 'footer.html' %}
+
+    <!-- jQuery JS -->
+    <script src="{% static "js/jquery-1.12.0.min.js" %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <!-- Animate JS -->
+    <script src="{% static "vendors/animate/wow.min.js" %}"></script>
+    <!-- Camera Slider -->
+    <script src="{% static "vendors/camera-slider/jquery.easing.1.3.js" %}"></script>
+    <script src="{% static "vendors/camera-slider/camera.min.js" %}"></script>
+    <!-- Isotope JS -->
+    <script src="{% static "vendors/isotope/imagesloaded.pkgd.min.js" %}"></script>
+    <script src="{% static "vendors/isotope/isotope.pkgd.min.js" %}"></script>
+    <!-- Progress JS -->
+    <script src="{% static "vendors/Counter-Up/jquery.counterup.min.js" %}"></script>
+    <script src="{% static "vendors/Counter-Up/waypoints.min.js" %}"></script>
+    <!-- Owlcarousel JS -->
+    <script src="{% static "vendors/owl_carousel/owl.carousel.min.js" %}"></script>
+    <!-- Stellar JS -->
+    <script src="{% static "vendors/stellar/jquery.stellar.js" %}"></script>
+    <!-- Theme JS -->
+    <script src="{% static "js/theme.js" %}"></script>
+</body>
+</html>

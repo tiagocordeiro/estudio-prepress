@@ -1,0 +1,79 @@
+{% load static from staticfiles %}
+<!-- Top Header_Area -->
+<section class="top_header_area" align="center">
+    <div class="container">
+        <ul class="nav navbar-nav top_nav">
+            <li><a href="#"><i class="fa fa-phone"  style="vertical-align: text-top;"></i>(11) 4994-7063</a></li>
+            <li><a href="#"><i class="fa fa-envelope-o" style="vertical-align: text-top;"></i>contato</a></li>
+        </ul>
+        <!--
+        <ul class="nav navbar-nav navbar-right social_nav">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+        </ul>
+        -->
+        <ul class="nav navbar-nav navbar-right top_nav">
+            {% if user.is_authenticated %}
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Olá {{ user.get_username }}</a></li>
+                <li><a href="#">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+            {% else %}
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Acessar</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</section>
+<!-- End Top Header_Area -->
+
+<!-- Header_Area -->
+<nav class="navbar navbar-default header_aera" id="main_navbar">
+    <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="col-md-2 p0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#min_navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static "images/estudioabc-logo-black.png" %}" alt=""></a>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="col-md-10 p0">
+            <div class="collapse navbar-collapse" id="min_navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li class="dropdown submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Serviços</a>
+                        <ul class="dropdown-menu other_dropdwn">
+                            <li><a href="#">Pre Press</a></li>
+                            <li><a href="#">CTP Chapas Off Set</a></li>
+                            <li><a href="#">Provas de Cor</a></li>
+                            <li><a href="#">Fotografia</a></li>
+                            <li><a href="#">Fotolito</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras</a>
+                        <ul class="dropdown-menu other_dropdwn">
+                            <li><a href="#">Cadastro</a></li>
+                            <li><a href="#">Duvidas Frequentes</a></li>
+                            <li><a href="#">Garantia</a></li>
+                            <li><a href="#">Devoluções</a></li>
+                            <li><a href="#">Dicas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </div><!-- /.container -->
+</nav>
+<!-- End Header_Area -->

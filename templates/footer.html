@@ -1,0 +1,50 @@
+{% load static from staticfiles %}
+<!-- Footer Area -->
+<footer class="footer_area">
+    <div class="container">
+        <div class="footer_row row">
+            <div class="col-md-3 col-sm-6 footer_about">
+
+                <img src="{% static "images/estudioabc-logo-footer.png" %}" alt="">
+                <p>O Estudio ABC é uma empresa que compartilha tecnologia de ultima geração com produtores gráficos, diretores de arte, designers, decoradores, arquitetos e artistas; que buscam a perfeição para reproduzir seus impressos e suas imagens.</p>
+                <ul class="socail_icon">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 footer_about quick">
+                <h2>Links Rápidos</h2>
+                <ul class="quick_link">
+                    <li><a href="{% url 'home' %}"><i class="fa fa-chevron-right"></i>Principal</a></li>
+                    <li><a href="#"><i class="fa fa-chevron-right"></i>Cadastro</a></li>
+                    <li><a href="#"><i class="fa fa-chevron-right"></i>Dúvidas Frequentes</a></li>
+                    <li><a href="#"><i class="fa fa-chevron-right"></i>Garantia</a></li>
+                    <li><a href="#"><i class="fa fa-chevron-right"></i>Devolução</a></li>
+                    <li><a href="#"><i class="fa fa-chevron-right"></i>Dicas</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 footer_about">
+                <h2>Notícias</h2>
+                <a href="#" class="twitter">@estudioabc: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</a>
+                <a href="#" class="twitter">@estudioabc: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</a>
+            </div>
+            <div class="col-md-3 col-sm-6 footer_about">
+                <h2>Contato</h2>
+                <address>
+                    <p>Tem alguma dúvida? Fale conosco.</p>
+                    <ul class="my_address">
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>central@estudioabc.com.br</a></li>
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>(11) 4994-7063</a></li>
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Rua Garcia Rodrigues, 677 - Vila Guiomar, Santo André - SP</span></a></li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="copyright_area">
+        ⓒ 2018 Desenvolvido por <a href="https://mulhergorila.com">Mulher Gorila</a>
+    </div>
+</footer>
+<!-- End Footer Area -->
